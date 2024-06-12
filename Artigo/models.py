@@ -14,7 +14,7 @@ class Artigo(db.Model):
     imagem = db.Column(db.String(255))
     
     def __repr__(self):
-        return f'<artigo> {self.id} {self.descricao}'
+        return f'<artigo {self.id} {self.descricao}>'
     
     def serializar(self):
         return {
